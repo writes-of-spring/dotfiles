@@ -1,0 +1,69 @@
+# OS generated files #
+######################
+.DS_Store
+.AppleDouble
+.LSOverride
+.gitconfig
+# Editor/IDE files #
+####################
+*.swp              # Vim swap files
+*.swo              # Vim swap files
+*.backup           # Vim backup files
+*.bak              # Generic backup files
+*.tmp              # Temporary files
+._*                # macOS hidden files created by some editors
+*~                 # Emacs and other editors' backup files
+*.idea/            # IntelliJ IDEA project files
+.vscode/          # VS Code files
+*.sublime-project  # Sublime Text project files
+*.sublime-workspace# Sublime Text workspace files
+
+# Sensitive data #
+##################
+*.key              # Private keys (VERY IMPORTANT TO EXCLUDE!)
+*.pem              # PEM files (certificates, keys)
+*.password*       # Files containing "password" in the name
+*.secret*         # Files containing "secret" in the name
+*.private*        # Files containing "private" in the name
+credentials*      # Files with credentials in the name
+.env               # Environment files (often contain secrets)
+
+# Package manager specific #
+############################
+node_modules/      # Node.js modules
+vendor/            # Composer (PHP) vendor directory
+__pycache__/        # Python bytecode
+*.pyc              # Python compiled files
+*.egg-info/        # Python package info
+dist/              # Python distribution files
+build/             # Python build files
+
+# Logs and temporary files #
+###########################
+*.log
+tmp/
+temp/
+/tmp/*
+
+# Specific to Stow (if applicable) #
+###############################
+# If you're using Stow, you might want to exclude
+# the symlinks from being tracked directly (although
+# tracking the Stow directory itself is fine).  This
+# depends on your workflow.  If you *want* to track
+# the symlinks, remove these lines.
+# * ->        #This can cause issues, see below.
+# If you have individual "package" directories that contain symlinks, you can specify them:
+# bash ->  #Example of "package" directory with symlinks
+# vim -> #Example of "package" directory with symlinks
+
+# If your stow directory is in a subdirectory, you need to specify the paths to ignore
+#Example, if your stow directory is in a .config directory
+# .config/bash ->
+# .config/vim ->
+
+# Custom additions #
+##################
+# Add any other patterns specific to your setup here.
+# For example, if you have a specific file you want to ignore:
+# my_special_file.txt
