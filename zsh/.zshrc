@@ -9,7 +9,6 @@ if [[ ":$FPATH:" != *":/Users/peterkerins/.zsh/completions:"* ]]; then
 fi
 
 # Environment setup
-export BAT_THEME="base16"
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
@@ -25,6 +24,8 @@ eval "$(fnm env --use-on-cd --shell zsh)"
 # Completion settings
 autoload -Uz compinit && compinit
 autoload -Uz zmv
+autoload -U select-word-style
+select-word-style bash
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select=2
@@ -41,7 +42,7 @@ alias zsource="source ~/.zshrc"
 
 # Initialize starship
 eval "$(starship init zsh)"
-
+export EZA_CONFIG_DIR="$HOME/.config/eza"
 
 # Load syntax highlighting (should be last)
 source $HOMEBREW_PREFIX/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
