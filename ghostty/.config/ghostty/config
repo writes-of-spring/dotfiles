@@ -1,5 +1,4 @@
-# theme = tokyonight
- theme = poimandres
+theme = tokyonight_night
 # font-family = MonoLisa Variable
 font-family = TX-02
 window-padding-x = 10
