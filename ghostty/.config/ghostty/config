@@ -1,9 +1,11 @@
 theme = tokyonight_night
 # font-family = MonoLisa Variable
-font-family = TX-02
+ font-family = TX-02
 window-padding-x = 10
-window-padding-y = 0,8
+window-padding-y = 4,6
 keybind = global:cmd+§=toggle_visibility
 font-feature = -calt
 cursor-style = bar
 auto-update-channel = tip
+config-file = ?local
+macos-option-as-alt = left
