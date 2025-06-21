@@ -67,3 +67,9 @@ temp/
 # Add any other patterns specific to your setup here.
 # For example, if you have a specific file you want to ignore:
 # my_special_file.txt
+
+# local (machine-specific) files #
+##########################
+# If you have local configuration files that should not be shared,
+# you can add them here. For example:
+ghostty/.config/ghostty/local
