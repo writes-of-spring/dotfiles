@@ -1,11 +1,13 @@
-theme = tokyonight_night
-# font-family = MonoLisa Variable
- font-family = TX-02
+
+theme = tokyonight night
+font-family = MonoLisa Variable
+
 window-padding-x = 10
 window-padding-y = 4,6
 keybind = global:cmd+§=toggle_visibility
-font-feature = -calt
+# font-feature = -calt
 cursor-style = bar
 auto-update-channel = tip
 config-file = ?local
 macos-option-as-alt = left
+faint-opacity = 0.7
