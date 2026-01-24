@@ -1,6 +1,5 @@
-
-theme = tokyonight night
-font-family = MonoLisa Variable
+command = /opt/homebrew/bin/fish --login --interactive
+theme = TokyoNight Night
 
 window-padding-x = 10
 window-padding-y = 4,6
