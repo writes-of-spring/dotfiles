@@ -1,3 +1,8 @@
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+    source "${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty-integration"
+fi
+
+bindkey -e
 
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/Users/peterkerins/.zsh/completions:"* ]]; then
@@ -22,9 +27,6 @@ autoload -Uz compinit && compinit
 autoload -Uz zmv
 autoload -U select-word-style
 
-
-
-
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 zstyle ':completion:*' menu select=2
 
@@ -40,12 +42,3 @@ export EZA_CONFIG_DIR="$HOME/.config/eza"
 eval "$(starship init zsh)"
 # Load syntax highlighting (should be last)
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-# Key bindings for option+left/right (word navigation)
-bindkey "^[b" backward-word
-bindkey "^[f" forward-word
-bindkey "^A" beginning-of-line
-bindkey "^E" end-of-line
-bindkey "^[[1;3A" up-line-or-search
-bindkey "^[[1;3B" down-line-or-search
-bindkey "^[^?" backward-kill-word
